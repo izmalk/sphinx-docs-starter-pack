@@ -4,12 +4,20 @@
 Quickstart guide
 ================
 
+This page contains a short guide on how to set up and use the starter pack. For more information, see the respective sections of the starter pack documentation: 
+:ref:`setup`, :ref:`update`, :ref:`automatic-checks`.
+
 Initial setup
 =============
 
 Clone the `Starter pack <https://github.com/canonical/sphinx-docs-starter-pack>`_ repository to a temporary local folder.
 
-If this is to be incorporated into another software repository: rename it (to :file:`docs`, by preference). Move it to the root of the repository. Delete :file:`.git`, :file:`.gitignore`, :file:`LICENSE`, :file:`README.rst`.
+Copy the following folders and files preserving their paths from the starter pack to the repository you want your documentation to be:
+
+   - :file:`docs`
+   - :file:`.readthedocs.yaml`
+   - :file:`.wokeignore`
+   - :file:`.github/workflows/*-checks.yml`
 
 
 Build and run the local server
@@ -31,10 +39,10 @@ This: creates and activates a virtual environment in :file:`docs/.sphinx/venv`, 
 The server watches the source files, including :file:`conf.py`, and rebuilds automatically on changes.
 
 
-Configure :file:`conf.py`
-=========================
+Adjust config
+=============
 
-Work through the settings in :file:`conf.py`. At this stage most can be left as they are, or simply ignored. They can all be changed later.
+Work through the settings in :file:`conf.py`. Most parameters can be left as they are or simply ignored. They can all be changed later.
 
 
 Update content
@@ -42,9 +50,4 @@ Update content
 
 The landing page is :file:`docs/index.rst`. Other pages are under :file:`docs/content`.
 
-See also: 
 
-* :ref:`setup`
-* :ref:`build`
-* :ref:`guidance`
-* :ref:`edit`
